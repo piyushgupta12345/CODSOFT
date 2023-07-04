@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Download Resume</title>
+  <style>
+    button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+  </style>
+</head>
+<body>
+  <button id="downloadBtn">Download Resume</button>
+  <script>
+    const downloadBtn = document.getElementById('downloadBtn');
+downloadBtn.addEventListener('click', () => {
+  const fileUrl = 'RESUME.docx'; 
+  window.open(fileUrl);
+});
+  </script>
+</body>
+</html>

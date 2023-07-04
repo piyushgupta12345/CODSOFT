@@ -1,0 +1,75 @@
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', serif;
+}
+
+/* body */
+body {
+    height: 100vh;
+    background: #009ffd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* <!-- ===========   Heading  =========== --> */
+h1 {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+/* <!-- ===========   main  =========== --> */
+.main {
+    background: #2734d3;;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* <!-- *************  Display Screen  ************** --> */
+.display {
+    display: flex;
+    justify-content: center;
+}
+
+/* <!-- ###########  input text  ############ --> */
+#inputDisplay {
+    width: 273px;
+    height: 80px;
+    border: 0;
+    outline: 0;
+    font-size: 2rem;
+    text-align: end;
+    background: #7880de;
+}
+
+/* <!-- *************  btns-group  ************** --> */
+.btns-group {
+    display: grid;
+    place-items: center;
+}
+
+
+/* <!-- ###########  row container > input btn  ############ --> */
+.row input {
+    padding: 12px 5px;
+    font-size: 1.3rem;
+    width: 43px;
+    margin: 5px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: #3b44b5;
+    box-shadow: 0px 0px 4px #cda0a0;
+    color: white;
+    transition: all .3s ease-in-out;
+}
+
+.row input:hover {
+    transform: scale(1.1);
+
+}

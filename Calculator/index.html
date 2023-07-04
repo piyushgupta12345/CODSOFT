@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculator WebApp</title>
+</head>
+
+<body>
+    <!-- +++++++++++++++  Calculator App  +++++++++++++++ -->
+
+    <!-- ===========   Heading  =========== -->
+    <h1>Basic Calculator</h1>
+
+    <!-- ===========   main  =========== -->
+    <div class="main">
+
+        <!-- *************  Display Screen  ************** -->
+        <div class="display">
+
+            <!-- ###########  input text  ############ -->
+            <input type="text" id="inputDisplay">
+
+        </div>
+
+        <!-- *************  btns-group  ************** -->
+        <div class="btns-group">
+
+            <!-- ###########  row container  ############ -->
+            <div class="row">
+                <input type="button" value="sin" onclick="inputDisplay.value ='sin'">
+                <input type="button" value="AC" onclick="inputDisplay.value =''">
+                <input type="button" value="DE"
+                    onclick="inputDisplay.value = inputDisplay.value.toString().slice(0, -1)">
+                <input type="button" value="%" onclick="inputDisplay.value +='%'">
+                <input type="button" value="/" onclick="inputDisplay.value +='/'">
+            </div>
+
+            <!-- ###########  row container  ############ -->
+            <div class="row">
+                <input type="button" value="cos" onclick="inputDisplay.value =Math.cos(inputDisplay.value)">
+                <input type="button" value="7" onclick="inputDisplay.value +='7'">
+                <input type="button" value="8" onclick="inputDisplay.value +='8'">
+                <input type="button" value="9" onclick="inputDisplay.value +='9'">
+                <input type="button" value="*" onclick="inputDisplay.value +='*'">
+            </div>
+
+            <!-- ###########  row container  ############ -->
+            <div class="row">
+                <input type="button" value="tan" onclick="inputDisplay.value =Math.tan(inputDisplay.value)">
+                <input type="button" value="4" onclick="inputDisplay.value +='4'">
+                <input type="button" value="5" onclick="inputDisplay.value +='5'">
+                <input type="button" value="6" onclick="inputDisplay.value +='6'">
+                <input type="button" value="-" onclick="inputDisplay.value +='-'">
+            </div>
+
+            <!-- ###########  row container  ############ -->
+            <div class="row">
+                <input type="button" value="√" onclick="inputDisplay.value =Math.sqrt(inputDisplay.value)">
+                <input type="button" value="1" onclick="inputDisplay.value +='1'">
+                <input type="button" value="2" onclick="inputDisplay.value +='2'">
+                <input type="button" value="3" onclick="inputDisplay.value +='3'">
+                <input type="button" value="+" onclick="inputDisplay.value +='+'">
+            </div>
+
+            <!-- ###########  row container  ############ -->
+            <div class="row">
+                <input type="button" value="π" onclick="inputDisplay.value ='3.14159265359'">
+                <input type="button" value="0" onclick="inputDisplay.value +='0'">
+                <input type="button" value="00" onclick="inputDisplay.value +='00'">
+                <input type="button" value="." onclick="inputDisplay.value +='.'">
+                <input type="button" value="=" onclick="inputDisplay.value =eval(inputDisplay.value)">
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
